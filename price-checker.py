@@ -168,7 +168,7 @@ amountofpages=1
 
 
 #for i in range(amountofpages):
-getItems(f"https://www.kleinanzeigen.de/s-anbieter:privat/anzeige:angebote/versand:ja/preis:90:120/iphone-11/k0", name)
+getItems(f"https://www.kleinanzeigen.de/s-anbieter:privat/anzeige:angebote/versand:ja/preis:90:130/iphone-11/k0", name)
 
 
 aiEdit(name+".json", name)
