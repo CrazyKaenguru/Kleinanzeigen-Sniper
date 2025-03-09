@@ -163,12 +163,16 @@ app = Flask(__name__)
 
 #if __name__ == "__main__":
    # app.run(debug=True)
-name="iPhone 11"
+name="ryzen-5-2600"
 amountofpages=1
+preismin=0
+preismax=30
 
 
+#url=f"https://www.kleinanzeigen.de/s-anbieter:privat/anzeige:angebote/direktkaufen:aktiv/versand:ja/preis:"+str(min)+":"+str(preismax)+"/"+str(name)+"/k0"
+url=f"https://www.kleinanzeigen.de/s-direktkaufen:aktiv/preis:0:30/ryzen-5-2600/k0"
 #for i in range(amountofpages):
-getItems(f"https://www.kleinanzeigen.de/s-anbieter:privat/anzeige:angebote/versand:ja/preis:90:130/iphone-11/k0", name)
+getItems(url, name)
 
 
 aiEdit(name+".json", name)

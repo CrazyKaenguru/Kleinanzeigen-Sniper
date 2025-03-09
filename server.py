@@ -87,5 +87,7 @@ def display_items():
         items = data if isinstance(data, list) else [data]
     return render_template_string(HTML_TEMPLATE, items=items,filename=filename)
 
+#@app.route('/')
+
 if __name__ == '__main__':
     app.run(debug=True)
